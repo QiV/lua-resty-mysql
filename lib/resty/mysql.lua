@@ -420,7 +420,7 @@ local function _parse_row_data_packet(data, cols, compact)
                 value = conv(value)
             end
         else
-            value = ''
+            value = false
         end
 
         if compact then
