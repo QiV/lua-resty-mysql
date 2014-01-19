@@ -419,6 +419,8 @@ local function _parse_row_data_packet(data, cols, compact)
             if conv then
                 value = conv(value)
             end
+        else
+            value = ''
         end
 
         if compact then
